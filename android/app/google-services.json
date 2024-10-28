@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "219563756047",
+    "project_id": "scissorsdoctor-33707",
+    "storage_bucket": "scissorsdoctor-33707.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:219563756047:android:00d9d51acd5ec7e01f317a",
+        "android_client_info": {
+          "package_name": "com.example.ecomm_dash"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDHZDqyHF_k6NfDRLm7thNWoIp5-GXVeYc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:219563756047:android:cefdaa35bb67a5e01f317a",
+        "android_client_info": {
+          "package_name": "com.scissorsdoctor.ecomm_dash"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDHZDqyHF_k6NfDRLm7thNWoIp5-GXVeYc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
