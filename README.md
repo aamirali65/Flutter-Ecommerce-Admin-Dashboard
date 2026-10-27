@@ -1,16 +1,33 @@
-# ecomm_dash
+# Flutter-Ecommerce-Admin-Dashboard
 
-A new Flutter project.
+The admin side of a Flutter storefront: manage products, promo slides and users, with the customer-facing cart state shared through a provider.
 
-## Getting Started
+## Screens
 
-This project is a starting point for a Flutter application.
+| Area | Files |
+|---|---|
+| Auth | `lib/pages/login.dart`, `register.dart`, `splash.dart` |
+| Dashboard | `lib/pages/home.dart` |
+| Products | `addProduct.dart`, `editProduct.dart`, `allProducts.dart` |
+| Promo slides | `addSlide.dart`, `editSlide.dart`, `allSlides.dart` |
+| Users | `allUser.dart` |
+| Other | `sharpServ.dart` (service request screen), `Contact.dart` |
 
-A few resources to get you started if this is your first Flutter project:
+Supporting pieces: `lib/models/product.dart` for the product shape, `lib/services/cart_provider.dart` for cart state, `lib/services/connection.dart` for the connectivity check, and `assets/products.json` as a local product seed.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Stack
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Flutter · Dart · Firebase (config committed in `lib/firebase_options.dart`) · `connectivity_plus` · product data seeded from a bundled JSON file
+
+## Running
+
+```bash
+flutter pub get
+flutter run
+```
+
+The Firebase configuration in the repo points at the project it was built with — swap in your own (`firebase.json`, `android/app/google-services.json`, `lib/firebase_options.dart`) before running against your own data.
+
+## Notes
+
+Built to pair with a customer-facing storefront app. The dashboard CRUD screens are the substance here; the bundled JSON is a fallback seed rather than a real data source.
